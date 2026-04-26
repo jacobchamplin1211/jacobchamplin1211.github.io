@@ -1,644 +1,106 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Free Final Expense Quote – South Carolina</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-
-body {
-  font-family: 'DM Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
-  background-color: #0c1524;
-  background: #0c1524;
-  color: #ffffff;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes popIn {
-  from { opacity: 0; transform: scale(0.97); }
-  to   { opacity: 1; transform: scale(1); }
-}
-@keyframes shimmer {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
-/* ── TOPBAR ── */
-.topbar {
-  position: relative;
-  z-index: 10;
-  background-color: rgba(240,180,41,0.1);
-  border-bottom: 1px solid rgba(240,180,41,0.25);
-  padding: 10px 20px;
-  text-align: center;
-  color: #f0b429;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  animation: fadeDown 0.5s ease both;
-}
-
-/* ── LOGO BANNER ── */
-.logo-banner {
-  width: 100%;
-  background-color: #0d1b2e;
-  background: linear-gradient(135deg, #0d1b2e 0%, #112240 50%, #0d1b2e 100%);
-  border-bottom: 2px solid rgba(240,180,41,0.35);
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  animation: fadeDown 0.5s ease 0.05s both;
-  position: relative;
-  overflow: hidden;
-}
-
-/* subtle gold line accents */
-.logo-banner::before,
-.logo-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 2px;
-  width: 30%;
-  background: linear-gradient(90deg, transparent, rgba(240,180,41,0.5), transparent);
-}
-.logo-banner::before { left: 0; }
-.logo-banner::after  { right: 0; }
-
-/* Shield SVG icon */
-.shield-wrap {
-  flex-shrink: 0;
-  width: 54px;
-  height: 64px;
-}
-
-.logo-text-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.logo-main-line {
-  display: flex;
-  align-items: baseline;
-  gap: 0;
-  line-height: 1;
-}
-
-.logo-whole {
-  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-  font-size: clamp(22px, 5.5vw, 36px);
-  font-weight: 900;
-  color: #f0b429;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.logo-life {
-  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-  font-size: clamp(22px, 5.5vw, 36px);
-  font-weight: 900;
-  color: #f0b429;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-left: 8px;
-}
-
-.logo-divider {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #f0b429, transparent);
-  margin: 3px 0;
-}
-
-.logo-solutions {
-  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-  font-size: clamp(11px, 2.8vw, 18px);
-  font-weight: 700;
-  color: #dde6f5;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-}
-
-.logo-tagline {
-  font-size: clamp(8px, 1.8vw, 11px);
-  color: #7a96c2;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 4px;
-  font-weight: 500;
-}
-.logo-tagline span {
-  color: #f0b429;
-  font-size: 8px;
-  margin: 0 3px;
-  vertical-align: middle;
-}
-
-/* ── HERO ── */
-.hero {
-  position: relative;
-  z-index: 10;
-  padding: 32px 20px 56px;
-  text-align: center;
-  animation: fadeUp 0.55s ease 0.15s both;
-}
-
-.hero-badge {
-  display: inline-block;
-  background-color: rgba(240,180,41,0.1);
-  border: 1px solid rgba(240,180,41,0.3);
-  border-radius: 20px;
-  padding: 5px 16px;
-  color: #f0b429;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.9px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  color: #ffffff;
-  font-size: clamp(22px, 6vw, 38px);
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 14px;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
-}
-
-.hero h1 em {
-  font-style: normal;
-  color: #f0b429;
-}
-
-.hero-sub {
-  color: #7a96c2;
-  font-size: 15px;
-  line-height: 1.75;
-  max-width: 400px;
-  margin: 0 auto 22px;
-}
-
-.hero-sub strong { color: #ffffff; font-weight: 600; }
-.hero-sub .gold  { color: #f0b429; font-weight: 700; }
-
-.proof-row {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.proof-pill {
-  background-color: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  padding: 5px 14px;
-  color: #dde6f5;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/* ── CARD ── */
-.card-wrap {
-  position: relative;
-  z-index: 10;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 16px 56px;
-}
-
-.card {
-  background-color: #111f38;
-  background: #111f38;
-  border-radius: 20px;
-  margin-top: -34px;
-  border: 1px solid rgba(240,180,41,0.2);
-  box-shadow: 0 28px 80px rgba(0,0,0,0.65), 0 8px 24px rgba(0,0,0,0.35);
-  overflow: hidden;
-  animation: popIn 0.4s ease 0.2s both;
-}
-
-.progress-track {
-  height: 3px;
-  background-color: rgba(255,255,255,0.06);
-}
-
-.progress-fill {
-  height: 3px;
-  background: linear-gradient(90deg, #b8841a, #f0b429, #fcd96a, #f0b429);
-  background-size: 200% auto;
-  animation: shimmer 2.5s linear infinite;
-  transition: width 0.45s cubic-bezier(0.4,0,0.2,1);
-}
-
-.quiz-inner {
-  padding: 28px 20px 32px;
-  animation: fadeUp 0.3s ease both;
-}
-
-.step-label {
-  color: #f0b429;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  margin-bottom: 8px;
-  opacity: 0.8;
-}
-
-.quiz-question {
-  font-family: 'Playfair Display', Georgia, serif;
-  color: #ffffff;
-  font-size: clamp(18px, 5vw, 24px);
-  font-weight: 700;
-  margin-bottom: 22px;
-  line-height: 1.35;
-}
-
-.options-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.options-grid.two-col { grid-template-columns: 1fr 1fr; }
-
-.opt-btn {
-  display: block;
-  width: 100%;
-  padding: 16px 18px;
-  background-color: rgba(255,255,255,0.07);
-  border: 1.5px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  color: #dde6f5;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: 'DM Sans', Helvetica, Arial, sans-serif;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.18s ease;
-  -webkit-appearance: none;
-  appearance: none;
-  line-height: 1.4;
-  min-height: 52px;
-  -webkit-tap-highlight-color: rgba(240,180,41,0.2);
-  touch-action: manipulation;
-}
-
-.opt-btn:hover,
-.opt-btn:focus,
-.opt-btn:active {
-  background-color: rgba(240,180,41,0.15);
-  border-color: #f0b429;
-  color: #f0b429;
-  outline: none;
-}
-
-.back-btn {
-  background: none;
-  border: none;
-  color: #7a96c2;
-  font-size: 13px;
-  font-weight: 500;
-  font-family: 'DM Sans', Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  padding: 8px 0;
-  transition: color 0.15s;
-  -webkit-appearance: none;
-  touch-action: manipulation;
-}
-.back-btn:hover { color: #dde6f5; }
-
-/* ── RESULT ── */
-.result-header {
-  padding: 28px 20px 20px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.tier-icon { font-size: 42px; margin-bottom: 12px; display: block; }
-
-.tier-badge {
-  display: inline-block;
-  border-radius: 20px;
-  padding: 5px 18px;
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.result-header p {
-  color: #7a96c2;
-  font-size: 14px;
-  line-height: 1.65;
-  max-width: 340px;
-  margin: 0 auto;
-}
-
-.premium-box {
-  padding: 22px 20px;
-  background-color: rgba(240,180,41,0.05);
-  border-top: 1px solid rgba(240,180,41,0.15);
-  border-bottom: 1px solid rgba(240,180,41,0.15);
-}
-
-.premium-label {
-  display: block;
-  color: #7a96c2;
-  font-size: 10.5px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.premium-amount {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.premium-low {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(40px, 12vw, 54px);
-  font-weight: 900;
-  line-height: 1;
-  color: #f0b429;
-  text-shadow: 0 0 28px rgba(240,180,41,0.4);
-}
-
-.premium-high { color: #7a96c2; font-size: 22px; font-weight: 600; }
-.premium-mo   { color: #7a96c2; font-size: 15px; font-weight: 500; }
-.premium-detail { color: #7a96c2; font-size: 13px; margin-bottom: 12px; }
-
-.premium-note {
-  padding: 11px 15px;
-  background-color: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
-  color: #7a96c2;
-  font-size: 12.5px;
-  line-height: 1.6;
-}
-
-.lead-form { padding: 24px 20px 28px; }
-
-.lead-form h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-  color: #ffffff;
-  font-size: 19px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.lead-form > p {
-  color: #7a96c2;
-  font-size: 14px;
-  margin-bottom: 18px;
-  line-height: 1.55;
-}
-
-.field { margin-bottom: 14px; }
-
-.field label {
-  display: block;
-  color: #dde6f5;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.field input {
-  display: block;
-  width: 100%;
-  padding: 14px 16px;
-  background-color: rgba(255,255,255,0.08);
-  border: 1.5px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: 'DM Sans', Helvetica, Arial, sans-serif;
-  -webkit-appearance: none;
-  appearance: none;
-  transition: border-color 0.15s, box-shadow 0.15s;
-  min-height: 50px;
-}
-
-.field input::placeholder { color: #4a6080; }
-.field input:focus {
-  outline: none;
-  border-color: #f0b429;
-  box-shadow: 0 0 0 3px rgba(240,180,41,0.15);
-}
-
-.cta-btn {
-  display: block;
-  width: 100%;
-  padding: 18px;
-  background: linear-gradient(135deg, #c8921a, #f0b429, #fcd96a);
-  color: #0c1524;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: 'DM Sans', Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  letter-spacing: 0.3px;
-  transition: filter 0.15s, box-shadow 0.15s;
-  -webkit-appearance: none;
-  appearance: none;
-  box-shadow: 0 8px 28px rgba(240,180,41,0.35);
-  min-height: 56px;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.cta-btn:hover:not(:disabled),
-.cta-btn:active:not(:disabled) {
-  filter: brightness(1.07);
-  box-shadow: 0 12px 32px rgba(240,180,41,0.45);
-}
-
-.cta-btn:disabled {
-  background: rgba(255,255,255,0.08);
-  color: #4a6080;
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.trust-strip {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-.trust-strip span { color: #4a6080; font-size: 12px; font-weight: 500; }
-
-/* ── THANK YOU ── */
-.thankyou {
-  padding: 38px 20px;
-  text-align: center;
-  animation: fadeUp 0.4s ease both;
-}
-.thankyou h2 {
-  font-family: 'Playfair Display', Georgia, serif;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.thankyou > p {
-  color: #7a96c2;
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-.thankyou-box {
-  background-color: rgba(240,180,41,0.07);
-  border: 1px solid rgba(240,180,41,0.25);
-  border-radius: 14px;
-  padding: 18px 20px;
-  color: #dde6f5;
-  font-size: 14px;
-  line-height: 2;
-  text-align: left;
-}
-
-/* ── TRUST SECTION ── */
-.trust-section { margin-top: 28px; }
-
-.carriers-label {
-  color: #4a6080;
-  font-size: 10.5px;
-  text-align: center;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 600;
-}
-
-.carriers {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.carrier-chip {
-  background-color: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 8px 16px;
-  color: #dde6f5;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.testimonials { display: flex; flex-direction: column; gap: 10px; }
-
-.testimonial {
-  background-color: #111f38;
-  background: #111f38;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 16px 18px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-}
-
-.stars { margin-bottom: 7px; font-size: 14px; }
-.testimonial blockquote {
-  color: #dde6f5;
-  font-size: 14px;
-  line-height: 1.65;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-.testimonial cite {
-  color: #4a6080;
-  font-size: 12px;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.footer-legal {
-  color: #4a6080;
-  font-size: 11px;
-  text-align: center;
-  margin-top: 24px;
-  line-height: 1.8;
-  padding: 0 4px;
-}
-
-.screen { display: none !important; }
-.screen.active { display: block !important; }
-</style>
+<title>Free Final Expense Quote - South Carolina</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#0c1524!important;color:#fff;font-family:'DM Sans',Arial,sans-serif;min-height:100vh;overflow-x:hidden;-webkit-text-size-adjust:100%}
+.topbar{background:rgba(240,180,41,0.12);border-bottom:1px solid rgba(240,180,41,0.3);padding:10px 20px;text-align:center;color:#f0b429;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.logo-banner{width:100%;background:#0d1b2e;border-bottom:2px solid rgba(240,180,41,0.4);padding:16px 20px;display:flex;align-items:center;justify-content:center;gap:16px}
+.shield-wrap{flex-shrink:0;width:52px;height:62px}
+.logo-text-block{display:flex;flex-direction:column;align-items:flex-start}
+.logo-whole-life{font-family:'Cinzel','Playfair Display',serif;font-size:clamp(20px,5vw,34px);font-weight:900;color:#f0b429;letter-spacing:3px;line-height:1}
+.logo-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,#f0b429,transparent);margin:4px 0}
+.logo-solutions{font-family:'Cinzel',serif;font-size:clamp(10px,2.5vw,16px);font-weight:700;color:#dde6f5;letter-spacing:5px}
+.logo-tagline{font-size:clamp(7px,1.6vw,10px);color:#7a96c2;letter-spacing:2px;text-transform:uppercase;margin-top:3px}
+.hero{padding:30px 20px 52px;text-align:center}
+.hero-badge{display:inline-block;background:rgba(240,180,41,0.1);border:1px solid rgba(240,180,41,0.3);border-radius:20px;padding:5px 16px;color:#f0b429;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-family:'Playfair Display',serif;color:#fff;font-size:clamp(22px,6vw,38px);font-weight:900;line-height:1.2;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:#f0b429}
+.hero-sub{color:#7a96c2;font-size:15px;line-height:1.75;max-width:400px;margin:0 auto 20px}
+.hero-sub strong{color:#fff}
+.hero-sub .gold{color:#f0b429;font-weight:700}
+.proof-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.proof-pill{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:5px 14px;color:#dde6f5;font-size:12px;font-weight:500}
+.card-wrap{max-width:500px;margin:0 auto;padding:0 16px 56px}
+.card{background:#111f38!important;border-radius:20px;margin-top:-32px;border:1px solid rgba(240,180,41,0.2);box-shadow:0 24px 60px rgba(0,0,0,0.6);overflow:hidden}
+.progress-track{height:3px;background:rgba(255,255,255,0.07)}
+.progress-fill{height:3px;background:linear-gradient(90deg,#b8841a,#f0b429,#fcd96a);transition:width 0.4s ease}
+.quiz-inner{padding:26px 20px 30px}
+.step-label{color:#f0b429;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;opacity:0.8}
+.quiz-question{font-family:'Playfair Display',serif;color:#fff;font-size:clamp(18px,5vw,24px);font-weight:700;margin-bottom:20px;line-height:1.35}
+.options-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:18px}
+.options-grid.two-col{grid-template-columns:1fr 1fr}
+.opt-btn{width:100%;padding:16px;background:rgba(255,255,255,0.07);border:1.5px solid rgba(255,255,255,0.15);border-radius:12px;color:#dde6f5;font-size:15px;font-weight:600;font-family:'DM Sans',Arial,sans-serif;text-align:center;cursor:pointer;min-height:52px;-webkit-appearance:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt-btn:active{background:rgba(240,180,41,0.15);border-color:#f0b429;color:#f0b429}
+.back-btn{background:none;border:none;color:#7a96c2;font-size:13px;font-weight:500;font-family:'DM Sans',Arial,sans-serif;cursor:pointer;padding:8px 0;touch-action:manipulation}
+.result-header{padding:26px 20px 18px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.08)}
+.tier-icon{font-size:40px;margin-bottom:10px;display:block}
+.tier-badge{display:inline-block;border-radius:20px;padding:5px 18px;font-size:11px;font-weight:700;margin-bottom:10px;letter-spacing:0.5px;text-transform:uppercase}
+.result-header p{color:#7a96c2;font-size:14px;line-height:1.6;max-width:340px;margin:0 auto}
+.premium-box{padding:20px;background:rgba(240,180,41,0.05);border-top:1px solid rgba(240,180,41,0.15);border-bottom:1px solid rgba(240,180,41,0.15)}
+.premium-label{display:block;color:#7a96c2;font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:8px}
+.premium-amount{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.premium-low{font-family:'Playfair Display',serif;font-size:clamp(38px,12vw,52px);font-weight:900;line-height:1;color:#f0b429}
+.premium-high{color:#7a96c2;font-size:20px;font-weight:600}
+.premium-mo{color:#7a96c2;font-size:14px}
+.premium-detail{color:#7a96c2;font-size:13px;margin-bottom:10px}
+.premium-note{padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;color:#7a96c2;font-size:12px;line-height:1.6}
+.lead-form{padding:22px 20px 26px}
+.lead-form h3{font-family:'Playfair Display',serif;color:#fff;font-size:19px;font-weight:700;margin-bottom:6px}
+.lead-form>p{color:#7a96c2;font-size:14px;margin-bottom:16px;line-height:1.5}
+.field{margin-bottom:12px}
+.field label{display:block;color:#dde6f5;font-size:13px;font-weight:600;margin-bottom:5px}
+.field input{display:block;width:100%;padding:14px 16px;background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.15);border-radius:12px;color:#fff;font-size:16px;font-family:'DM Sans',Arial,sans-serif;-webkit-appearance:none;min-height:50px}
+.field input::placeholder{color:#4a6080}
+.field input:focus{outline:none;border-color:#f0b429}
+.cta-btn{display:block;width:100%;padding:18px;background:linear-gradient(135deg,#c8921a,#f0b429,#fcd96a);color:#0c1524;border:none;border-radius:12px;font-size:16px;font-weight:700;font-family:'DM Sans',Arial,sans-serif;cursor:pointer;min-height:56px;-webkit-appearance:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;box-shadow:0 8px 24px rgba(240,180,41,0.3)}
+.cta-btn:disabled{background:rgba(255,255,255,0.08);color:#4a6080;box-shadow:none}
+.trust-strip{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:10px}
+.trust-strip span{color:#4a6080;font-size:12px}
+.thankyou{padding:36px 20px;text-align:center}
+.thankyou h2{font-family:'Playfair Display',serif;color:#fff;font-size:22px;font-weight:700;margin-bottom:10px}
+.thankyou>p{color:#7a96c2;font-size:15px;line-height:1.7;margin-bottom:18px}
+.thankyou-box{background:rgba(240,180,41,0.07);border:1px solid rgba(240,180,41,0.25);border-radius:14px;padding:16px 18px;color:#dde6f5;font-size:14px;line-height:2;text-align:left}
+.trust-section{margin-top:26px}
+.carriers-label{color:#4a6080;font-size:10px;text-align:center;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.carriers{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.carrier-chip{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:8px 14px;color:#dde6f5;font-size:13px;font-weight:600}
+.testimonials{display:flex;flex-direction:column;gap:10px}
+.testimonial{background:#111f38!important;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px 16px}
+.stars{margin-bottom:6px;font-size:13px}
+.testimonial blockquote{color:#dde6f5;font-size:14px;line-height:1.6;font-style:italic;margin-bottom:6px}
+.testimonial cite{color:#4a6080;font-size:12px;font-weight:600;font-style:normal}
+.footer-legal{color:#4a6080;font-size:11px;text-align:center;margin-top:22px;line-height:1.8;padding:0 4px}
+.screen{display:none!important}
+.screen.active{display:block!important}
+</style>
 
-<!-- TOP BAR -->
 <div class="topbar">🔒 Licensed Insurance Agent · South Carolina · No Obligation</div>
 
-<!-- LOGO BANNER -->
 <div class="logo-banner">
-  <!-- Shield SVG — navy + gold heart, matching the logo style -->
   <div class="shield-wrap">
-    <svg viewBox="0 0 54 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="54" height="64">
-      <!-- Shield body -->
-      <path d="M27 2 L52 12 L52 34 C52 50 27 62 27 62 C27 62 2 50 2 34 L2 12 Z"
-            fill="#0d1b2e" stroke="#f0b429" stroke-width="2.5"/>
-      <!-- Inner shield border -->
-      <path d="M27 7 L47 15.5 L47 34 C47 47 27 57 27 57 C27 57 7 47 7 34 L7 15.5 Z"
-            fill="none" stroke="rgba(240,180,41,0.35)" stroke-width="1.2"/>
-      <!-- Heart icon -->
-      <path d="M27 42 C27 42 14 33 14 25.5 C14 21.4 17.1 18 21 18 C23.2 18 25.2 19.1 27 21 C28.8 19.1 30.8 18 33 18 C36.9 18 40 21.4 40 25.5 C40 33 27 42 27 42Z"
-            fill="#f0b429"/>
-      <!-- Small dot at top of shield -->
-      <circle cx="27" cy="6" r="1.5" fill="rgba(240,180,41,0.6)"/>
+    <svg viewBox="0 0 54 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="52" height="62">
+      <path d="M27 2 L52 12 L52 34 C52 50 27 62 27 62 C27 62 2 50 2 34 L2 12 Z" fill="#0d1b2e" stroke="#f0b429" stroke-width="2.5"/>
+      <path d="M27 7 L47 15.5 L47 34 C47 47 27 57 27 57 C27 57 7 47 7 34 L7 15.5 Z" fill="none" stroke="rgba(240,180,41,0.3)" stroke-width="1"/>
+      <path d="M27 42 C27 42 14 33 14 25.5 C14 21.4 17.1 18 21 18 C23.2 18 25.2 19.1 27 21 C28.8 19.1 30.8 18 33 18 C36.9 18 40 21.4 40 25.5 C40 33 27 42 27 42Z" fill="#f0b429"/>
+      <circle cx="27" cy="6" r="1.5" fill="rgba(240,180,41,0.5)"/>
     </svg>
   </div>
-
-  <!-- Text -->
   <div class="logo-text-block">
-    <div class="logo-main-line">
-      <span class="logo-whole">WHOLE</span>
-      <span class="logo-life">LIFE</span>
-    </div>
+    <div class="logo-whole-life">WHOLE LIFE</div>
     <div class="logo-divider"></div>
     <div class="logo-solutions">SOLUTIONS</div>
-    <div class="logo-tagline">
-      <span>●</span>LICENSED<span>·</span>SOUTH CAROLINA<span>·</span>FINAL EXPENSE<span>●</span>
-    </div>
+    <div class="logo-tagline">● LICENSED · SOUTH CAROLINA · FINAL EXPENSE ●</div>
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge">Free · No Obligation · Takes 60 Seconds</div>
   <h1>South Carolina Seniors:<br><em>See What Final Expense<br>Coverage You Qualify For</em></h1>
@@ -650,15 +112,11 @@ body {
   </div>
 </div>
 
-<!-- CARD -->
 <div class="card-wrap">
   <div class="card" id="mainCard">
-
     <div class="progress-track" id="progressTrack">
       <div class="progress-fill" id="progressFill" style="width:16.6%"></div>
     </div>
-
-    <!-- QUIZ SCREEN -->
     <div class="screen active" id="quizScreen">
       <div class="quiz-inner">
         <p class="step-label" id="stepLabel">Question 1 of 6</p>
@@ -667,8 +125,6 @@ body {
         <button class="back-btn" id="backBtn" onclick="goBack()" style="display:none">← Back</button>
       </div>
     </div>
-
-    <!-- RESULT SCREEN -->
     <div class="screen" id="resultScreen">
       <div class="result-header" id="resultHeader"></div>
       <div class="premium-box" id="premiumBox"></div>
@@ -683,9 +139,7 @@ body {
           <label for="phoneInput">Phone Number</label>
           <input type="tel" id="phoneInput" placeholder="(864) 555-0100" autocomplete="tel" oninput="checkForm()">
         </div>
-        <button class="cta-btn" id="submitBtn" onclick="submitLead()" disabled>
-          🔒 Yes! Send Me My Free Quote →
-        </button>
+        <button class="cta-btn" id="submitBtn" onclick="submitLead()" disabled>🔒 Yes! Send Me My Free Quote →</button>
         <div class="trust-strip">
           <span>🔒 100% Secure</span>
           <span>✉ No Spam</span>
@@ -693,11 +147,9 @@ body {
         </div>
       </div>
     </div>
-
-    <!-- THANK YOU SCREEN -->
     <div class="screen" id="thankYouScreen">
       <div class="thankyou">
-        <div style="font-size:52px;margin-bottom:16px">🎉</div>
+        <div style="font-size:50px;margin-bottom:14px">🎉</div>
         <h2 id="thankYouName">You're confirmed!</h2>
         <p id="thankYouPhone"></p>
         <div class="thankyou-box">
@@ -709,10 +161,8 @@ body {
         </div>
       </div>
     </div>
-
   </div>
 
-  <!-- TRUST SECTION -->
   <div class="trust-section" id="trustSection">
     <p class="carriers-label">Trusted Carriers</p>
     <div class="carriers">
@@ -735,140 +185,90 @@ body {
     </div>
   </div>
 
-  <p class="footer-legal">
-    Licensed insurance agent in South Carolina. This is not a government website and is not affiliated with Medicare, Medicaid, or Social Security. By submitting your information, you consent to be contacted by a licensed agent. We respect your privacy.
-  </p>
+  <p class="footer-legal">Licensed insurance agent in South Carolina. This is not a government website and is not affiliated with Medicare, Medicaid, or Social Security. By submitting your information, you consent to be contacted by a licensed agent. We respect your privacy.</p>
 </div>
 
 <script>
-var STEPS = [
-  { id: "age",        label: "How old are you?",              options: ["50s","60s","70s","80s"] },
-  { id: "gender",     label: "Your gender?",                  options: ["Female","Male"] },
-  { id: "smoker",     label: "Do you smoke or use tobacco?",  options: ["No","Yes"] },
-  { id: "health",     label: "Your overall health?",          options: ["Excellent","Good","Fair","Poor"] },
-  { id: "conditions", label: "Any major health conditions?",  options: ["None","Diabetes / Heart Disease","Cancer or Serious Illness","On Oxygen or Dialysis"] },
-  { id: "coverage",   label: "How much coverage do you need?",options: ["$5,000","$10,000","$15,000","$20,000","$25,000"] }
+var STEPS=[
+  {id:"age",label:"How old are you?",options:["50s","60s","70s","80s"]},
+  {id:"gender",label:"Your gender?",options:["Female","Male"]},
+  {id:"smoker",label:"Do you smoke or use tobacco?",options:["No","Yes"]},
+  {id:"health",label:"Your overall health?",options:["Excellent","Good","Fair","Poor"]},
+  {id:"conditions",label:"Any major health conditions?",options:["None","Diabetes / Heart Disease","Cancer or Serious Illness","On Oxygen or Dialysis"]},
+  {id:"coverage",label:"How much coverage do you need?",options:["$5,000","$10,000","$15,000","$20,000","$25,000"]}
 ];
-
-var step = 0;
-var answers = {};
-
-function renderStep() {
-  var s = STEPS[step];
-  document.getElementById('stepLabel').textContent = 'Question ' + (step + 1) + ' of ' + STEPS.length;
-  document.getElementById('questionText').textContent = s.label;
-  document.getElementById('progressFill').style.width = (((step + 1) / STEPS.length) * 100) + '%';
-  document.getElementById('backBtn').style.display = step > 0 ? 'inline-block' : 'none';
-
-  var grid = document.getElementById('optionsGrid');
-  grid.innerHTML = '';
-  grid.className = 'options-grid' + (s.options.length <= 2 ? ' two-col' : '');
-
-  s.options.forEach(function(opt) {
-    var btn = document.createElement('button');
-    btn.className = 'opt-btn';
-    btn.type = 'button';
-    btn.textContent = opt;
-    btn.addEventListener('click', function() { choose(opt); });
-    btn.addEventListener('touchend', function(e) { e.preventDefault(); choose(opt); });
+var step=0,answers={};
+function renderStep(){
+  var s=STEPS[step];
+  document.getElementById('stepLabel').textContent='Question '+(step+1)+' of '+STEPS.length;
+  document.getElementById('questionText').textContent=s.label;
+  document.getElementById('progressFill').style.width=(((step+1)/STEPS.length)*100)+'%';
+  document.getElementById('backBtn').style.display=step>0?'inline-block':'none';
+  var grid=document.getElementById('optionsGrid');
+  grid.innerHTML='';
+  grid.className='options-grid'+(s.options.length<=2?' two-col':'');
+  s.options.forEach(function(opt){
+    var btn=document.createElement('button');
+    btn.className='opt-btn';btn.type='button';btn.textContent=opt;
+    btn.addEventListener('click',function(){choose(opt);});
+    btn.addEventListener('touchend',function(e){e.preventDefault();choose(opt);});
     grid.appendChild(btn);
   });
 }
-
-function choose(val) {
-  answers[STEPS[step].id] = val;
-  if (step + 1 === STEPS.length) { showResult(); }
-  else { step++; renderStep(); }
+function choose(val){
+  answers[STEPS[step].id]=val;
+  if(step+1===STEPS.length){showResult();}else{step++;renderStep();}
 }
-
-function goBack() {
-  if (step > 0) { step--; renderStep(); }
+function goBack(){if(step>0){step--;renderStep();}}
+function getTier(){
+  if(answers.conditions==="On Oxygen or Dialysis")return"Guaranteed";
+  if(answers.conditions==="Cancer or Serious Illness")return"Graded";
+  return"Level";
 }
-
-function getTier() {
-  var a = answers;
-  if (a.conditions === "On Oxygen or Dialysis") return "Guaranteed";
-  if (a.conditions === "Cancer or Serious Illness") return "Graded";
-  return "Level";
+function estimatePremium(tier){
+  var ar={"50s":0.0022,"60s":0.0036,"70s":0.0058,"80s":0.009};
+  var cv={"$5,000":5000,"$10,000":10000,"$15,000":15000,"$20,000":20000,"$25,000":25000};
+  var rate=ar[answers.age]||0.004;
+  if(answers.gender==="Male")rate*=1.18;
+  if(answers.smoker==="Yes")rate*=1.35;
+  if(tier==="Graded")rate*=1.25;
+  if(tier==="Guaranteed")rate*=1.55;
+  var m=(cv[answers.coverage]||10000)*rate;
+  return{low:Math.round(m*0.92),high:Math.round(m*1.12)};
 }
-
-function estimatePremium(tier) {
-  var ageRates = { "50s":0.0022, "60s":0.0036, "70s":0.0058, "80s":0.009 };
-  var covVals  = { "$5,000":5000, "$10,000":10000, "$15,000":15000, "$20,000":20000, "$25,000":25000 };
-  var rate = ageRates[answers.age] || 0.004;
-  if (answers.gender === "Male") rate *= 1.18;
-  if (answers.smoker === "Yes")  rate *= 1.35;
-  if (tier === "Graded")         rate *= 1.25;
-  if (tier === "Guaranteed")     rate *= 1.55;
-  var base = covVals[answers.coverage] || 10000;
-  var m = base * rate;
-  return { low: Math.round(m * 0.92), high: Math.round(m * 1.12) };
-}
-
-var TIER_INFO = {
-  Level:      { label:"Level Benefit",    color:"#22c55e", bg:"rgba(34,197,94,0.08)",  border:"rgba(34,197,94,0.25)",  icon:"⭐", blurb:"Best rates — full coverage starts from day one." },
-  Graded:     { label:"Graded Benefit",   color:"#60a5fa", bg:"rgba(96,165,250,0.08)", border:"rgba(96,165,250,0.25)", icon:"📋", blurb:"Affordable premiums — full coverage begins after 2 years." },
-  Guaranteed: { label:"Guaranteed Issue", color:"#f0b429", bg:"rgba(240,180,41,0.08)", border:"rgba(240,180,41,0.25)", icon:"🛡️", blurb:"Guaranteed approval regardless of health history." }
+var TI={
+  Level:{label:"Level Benefit",color:"#22c55e",bg:"rgba(34,197,94,0.08)",border:"rgba(34,197,94,0.25)",icon:"⭐",blurb:"Best rates — full coverage starts from day one."},
+  Graded:{label:"Graded Benefit",color:"#60a5fa",bg:"rgba(96,165,250,0.08)",border:"rgba(96,165,250,0.25)",icon:"📋",blurb:"Affordable premiums — full coverage begins after 2 years."},
+  Guaranteed:{label:"Guaranteed Issue",color:"#f0b429",bg:"rgba(240,180,41,0.08)",border:"rgba(240,180,41,0.25)",icon:"🛡️",blurb:"Guaranteed approval regardless of health history."}
 };
-
-function showResult() {
-  var tier = getTier();
-  var info = TIER_INFO[tier];
-  var prem = estimatePremium(tier);
-
-  var rh = document.getElementById('resultHeader');
-  rh.style.borderBottom = '1px solid ' + info.border;
-  rh.innerHTML =
-    '<span class="tier-icon">' + info.icon + '</span>' +
-    '<div class="tier-badge" style="background:' + info.bg + ';border:1px solid ' + info.border + ';color:' + info.color + '">You Qualify: ' + info.label + '</div>' +
-    '<p>' + info.blurb + '</p>';
-
-  document.getElementById('premiumBox').innerHTML =
-    '<span class="premium-label">Your Estimated Monthly Premium</span>' +
-    '<div class="premium-amount">' +
-      '<span class="premium-low">$' + prem.low + '</span>' +
-      '<span class="premium-high">– $' + prem.high + '</span>' +
-      '<span class="premium-mo">/mo</span>' +
-    '</div>' +
-    '<p class="premium-detail">For ' + answers.coverage + ' · ' + answers.age + ' · ' + answers.gender + ' · ' + (answers.smoker==="Yes"?"Smoker":"Non-smoker") + '</p>' +
-    '<div class="premium-note">📊 Based on current carrier rates from Mutual of Omaha, Transamerica &amp; AIG. Exact rate confirmed by your agent.</div>';
-
-  document.getElementById('progressTrack').style.display = 'none';
+function showResult(){
+  var tier=getTier(),info=TI[tier],prem=estimatePremium(tier);
+  var rh=document.getElementById('resultHeader');
+  rh.style.borderBottom='1px solid '+info.border;
+  rh.innerHTML='<span class="tier-icon">'+info.icon+'</span><div class="tier-badge" style="background:'+info.bg+';border:1px solid '+info.border+';color:'+info.color+'">You Qualify: '+info.label+'</div><p>'+info.blurb+'</p>';
+  document.getElementById('premiumBox').innerHTML='<span class="premium-label">Your Estimated Monthly Premium</span><div class="premium-amount"><span class="premium-low">$'+prem.low+'</span><span class="premium-high">– $'+prem.high+'</span><span class="premium-mo">/mo</span></div><p class="premium-detail">For '+answers.coverage+' · '+answers.age+' · '+answers.gender+' · '+(answers.smoker==="Yes"?"Smoker":"Non-smoker")+'</p><div class="premium-note">📊 Based on current carrier rates from Mutual of Omaha, Transamerica &amp; AIG. Exact rate confirmed by your agent.</div>';
+  document.getElementById('progressTrack').style.display='none';
   document.getElementById('quizScreen').classList.remove('active');
   document.getElementById('resultScreen').classList.add('active');
 }
-
-function checkForm() {
-  var name  = document.getElementById('nameInput').value.trim();
-  var phone = document.getElementById('phoneInput').value.trim();
-  document.getElementById('submitBtn').disabled = !(name && phone);
+function checkForm(){
+  var n=document.getElementById('nameInput').value.trim();
+  var p=document.getElementById('phoneInput').value.trim();
+  document.getElementById('submitBtn').disabled=!(n&&p);
 }
-
-function submitLead() {
-  var name  = document.getElementById('nameInput').value.trim();
-  var phone = document.getElementById('phoneInput').value.trim();
-  if (!name || !phone) return;
-
-  fetch("https://formspree.io/f/xpqkbwby", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      name:name, phone:phone,
-      age:answers.age, gender:answers.gender,
-      smoker:answers.smoker, health:answers.health,
-      conditions:answers.conditions, coverage:answers.coverage,
-      tier:getTier()
-    })
-  });
-
-  document.getElementById('thankYouName').textContent = "You're confirmed, " + name.split(' ')[0] + "!";
-  document.getElementById('thankYouPhone').innerHTML = "A licensed agent will call <strong style='color:#fff'>" + phone + "</strong> within 24 hours with your personalized final expense quote.";
+function submitLead(){
+  var n=document.getElementById('nameInput').value.trim();
+  var p=document.getElementById('phoneInput').value.trim();
+  if(!n||!p)return;
+  fetch("https://formspree.io/f/xpqkbwby",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:n,phone:p,age:answers.age,gender:answers.gender,smoker:answers.smoker,health:answers.health,conditions:answers.conditions,coverage:answers.coverage,tier:getTier()})});
+  document.getElementById('thankYouName').textContent="You're confirmed, "+n.split(' ')[0]+"!";
+  document.getElementById('thankYouPhone').innerHTML="A licensed agent will call <strong style='color:#fff'>"+p+"</strong> within 24 hours with your personalized final expense quote.";
   document.getElementById('resultScreen').classList.remove('active');
   document.getElementById('thankYouScreen').classList.add('active');
-  document.getElementById('trustSection').style.display = 'none';
+  document.getElementById('trustSection').style.display='none';
 }
-
 renderStep();
 </script>
+
 </body>
 </html>
